@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+  }
+  html {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  .title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .menu {
+    height: 115px;
+    background-color: #0e5ed6;
+    font-family: Helvetica;
+    box-shadow: 0px 0px 100px 5px;
+    display: flex;
+    width: 100%;
+  }
+
+  .menu img{
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 90%;
+  }
+  
+  .menu h1 {
+    font-size: 18px;
+    text-align: left;
+    padding: 12.5px 0 12.5px 12.5px;
+    color: white;
+    width: 0;
+  }
+  
+  .menu ul {
+    margin: 0 auto;
+  }
+  
+  .menu ul li ul {
+    width: 100%;
+  }
+  
+  .menu ul li {
+    display: inline-block;
+    width: 150px;
+    padding: 0px 10px;
+    line-height: 25px;
+    padding: 0;
+    position: relative;
+  }
+  
+  .menu ul li a {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .menu a {
+    padding-top: 50px;
+    display: block;
+    text-decoration: none;
+    color: #222020;
+  }
+  
+  .menu ul ul {
+    background-color: rgb(13, 75, 190);
+    position: absolute;
+    opacity: 0;
+    transition: all 500ms;
+  }
+  
+  .menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #0578e4;
+  }
+  
+  .menu ul li:hover ul {
+    opacity: 1;
+  }
+  
+  .menu ul ul a:hover {
+    transition: all 0.4s ease;
+    background-color: #0578e4;
+    color: white;
+  }
+  
+  .menu a:hover {
+    transition: all 0.4s ease;
+    color: white;
+  }
+  
+  .menu ul ul li {
+    background-color: #1644db;
+  }
+  
+  .menu ul ul li a {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .menu ul ul li a:hover ul ul ul {
+    visibility: visible;
+  }
+  .menu li  ul{
+    position:absolute;
+    top:75px;
+    left:0;
+    display:none;
+    }
+
+    .menu li:hover ul, .menu li.over ul{
+      display:block;
+    }
+    .menu li ul li{
+      display:block;
+      width:150px;
+    }
+  nav {
+    margin-bottom: 30px
+  }
+  p {
+    padding: 20px;
+    font-size: 17px;
+  }
+  #img-enchentes{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    
+  }
+  .enchentes{
+    text-align: center;
+  }
+  .titulo {
+    padding: 20px;
+    color: #0578e4;
+    text-align: center;
+  }
+  #prevencao {
+    padding: 20px;
+  
+  }
+  h3{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .forma_de_doacao{
+    margin-top: 10px;
+  }
+  .form_doacao input{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .ajudas {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    
+  }
+  .div-ajudas {
+    padding: 10px;
+    text-align: center;
+  }
+  .btn {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 17%;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0578e4;
+    transition: 0.5s;
+  }
+  .btn:hover{
+    background: #1644db;
+  }
+  #link {
+    padding-bottom: 20px;
+  }
+  .img-prevencao {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+  }
+  .prevencao {
+   text-align: center;
+   display: inline-block;
+   width: 31%;
+   margin: 1% 1%;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #img-1 {
+    background-image: url(imagens/prevencao1.jpg) ;
+  }
+  #img-2 {
+    background-image: url(imagens/prevencao2.jpg);
+  }
+  #img-3 {
+    background-image: url(imagens/prevencao3.jpg);
+  }
+  .form_doacao {
+    padding: 10px;
+    text-align: center;
+  }
+  .botao {
+    padding: 15px;
+    text-align: center;
+  }
+  .form_volun{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .form_volun input{
+    margin-top: 1px;
+    width: 100%;
+    height: 20px;
+    display: block;
+    font-size: 15px;
+  }
+  .form_volun label {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+  .enviar_volun{
+    background-color: green;
+    font-size: 15px;
+  }
+  .form_volun form{
+    padding: 20px;
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #6a6b6c;
+    background-color: #e1e2e3;
+    
+  }
+  .volun{
+    text-align: center;
+  }
+  
+  .conteudo P{
+    text-align: center;
+  }
+  .conteudo2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteudo2 table{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border: 5px solid;
+    border-color: #222020;
+    border-radius: 10px;
+    border-style: ridge;
+  }
+  .conteudo2 table td{
+    padding: 5px;
+  }
+  .conteudo2 table th{
+    background-color: #ccc;
+    }
+  .risco{
+    border-color: black;
+  }
+  textarea{
+    margin-left: 130px;
+  }
+  .rodape{
+    margin-top: auto;
+  }
+  footer {
+    background-color: #0578e4;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+  }
+  footer h6{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer img{
+    width: 30px;
+    margin-left: 10px;
+  }
+  .copy{
+    font-weight: bold;
+    margin-bottom: -15px;
+    font-size: 20px;
+  }
+  
